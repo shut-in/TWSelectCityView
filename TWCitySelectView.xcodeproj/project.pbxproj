@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3944981D2A3BAE005CC48A /* TWSelectCityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3944971D2A3BAE005CC48A /* TWSelectCityView.m */; };
+		7E39449A1D2A3BBA005CC48A /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E3944991D2A3BBA005CC48A /* Address.plist */; };
 		7E610DC71D251EDB007E8CC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E610DC61D251EDB007E8CC9 /* main.m */; };
 		7E610DCA1D251EDB007E8CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E610DC91D251EDB007E8CC9 /* AppDelegate.m */; };
 		7E610DCD1D251EDB007E8CC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E610DCC1D251EDB007E8CC9 /* ViewController.m */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E3944961D2A3BAE005CC48A /* TWSelectCityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSelectCityView.h; sourceTree = "<group>"; };
+		7E3944971D2A3BAE005CC48A /* TWSelectCityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSelectCityView.m; sourceTree = "<group>"; };
+		7E3944991D2A3BBA005CC48A /* Address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Address.plist; sourceTree = "<group>"; };
 		7E610DC21D251EDB007E8CC9 /* TWCitySelectView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWCitySelectView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E610DC61D251EDB007E8CC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E610DC81D251EDB007E8CC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E3944951D2A3BAE005CC48A /* TWSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				7E3944961D2A3BAE005CC48A /* TWSelectCityView.h */,
+				7E3944971D2A3BAE005CC48A /* TWSelectCityView.m */,
+			);
+			path = TWSelectView;
+			sourceTree = "<group>";
+		};
 		7E610DB91D251EDB007E8CC9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +115,7 @@
 		7E610DC41D251EDB007E8CC9 /* TWCitySelectView */ = {
 			isa = PBXGroup;
 			children = (
+				7E3944951D2A3BAE005CC48A /* TWSelectView */,
 				7E610DC81D251EDB007E8CC9 /* AppDelegate.h */,
 				7E610DC91D251EDB007E8CC9 /* AppDelegate.m */,
 				7E610DCB1D251EDB007E8CC9 /* ViewController.h */,
@@ -109,6 +124,7 @@
 				7E610DD11D251EDB007E8CC9 /* Assets.xcassets */,
 				7E610DD31D251EDB007E8CC9 /* LaunchScreen.storyboard */,
 				7E610DD61D251EDB007E8CC9 /* Info.plist */,
+				7E3944991D2A3BBA005CC48A /* Address.plist */,
 				7E610DC51D251EDB007E8CC9 /* Supporting Files */,
 			);
 			path = TWCitySelectView;
@@ -244,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E610DD51D251EDB007E8CC9 /* LaunchScreen.storyboard in Resources */,
+				7E39449A1D2A3BBA005CC48A /* Address.plist in Resources */,
 				7E610DD21D251EDB007E8CC9 /* Assets.xcassets in Resources */,
 				7E610DD01D251EDB007E8CC9 /* Main.storyboard in Resources */,
 			);
@@ -270,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3944981D2A3BAE005CC48A /* TWSelectCityView.m in Sources */,
 				7E610DCD1D251EDB007E8CC9 /* ViewController.m in Sources */,
 				7E610DCA1D251EDB007E8CC9 /* AppDelegate.m in Sources */,
 				7E610DC71D251EDB007E8CC9 /* main.m in Sources */,
@@ -498,6 +516,7 @@
 				7E610DF11D251EDB007E8CC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E610DF21D251EDB007E8CC9 /* Build configuration list for PBXNativeTarget "TWCitySelectViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +525,7 @@
 				7E610DF41D251EDB007E8CC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E610DF51D251EDB007E8CC9 /* Build configuration list for PBXNativeTarget "TWCitySelectViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +534,7 @@
 				7E610DF71D251EDB007E8CC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
