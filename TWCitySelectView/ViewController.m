@@ -21,6 +21,12 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param touches <#touches description#>
+ *  @param event   <#event description#>
+ */
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     TWSelectCityView *city = [[TWSelectCityView alloc] initWithTWFrame:self.view.bounds TWselectCityTitle:@"选择地区"];
     __weak typeof(self)blockself = self;
