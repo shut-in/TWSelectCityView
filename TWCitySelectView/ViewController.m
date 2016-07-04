@@ -24,11 +24,12 @@
 /**
  *  在此进入
  *
- *  @param touches <#touches description#>
- *  @param event   <#event description#>
  */
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [@"df" isEqualToString:@""];
+    
     TWSelectCityView *city = [[TWSelectCityView alloc] initWithTWFrame:self.view.bounds TWselectCityTitle:@"选择地区"];
     __weak typeof(self)blockself = self;
     [city showCityView:^(NSString *proviceStr, NSString *cityStr, NSString *distr) {
