@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TWSelectCityView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *strLB;
 
 @end
 
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    TWSelectCityView *city = [[TWSelectCityView alloc] initWithTWFrame:self.view.bounds TWselectCityTitle:@"选择地区"];
+    __weak typeof(self)blockself = self;
+    [city showCityView:^(NSString *proviceStr, NSString *cityStr, NSString *distr) {
+        blockself.strLB.text = [NSString stringWithFormat:@"%@->%@->%@",proviceStr,cityStr,distr];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
